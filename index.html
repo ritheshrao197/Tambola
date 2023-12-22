@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tambola</title>
+        <link id="stylesheet" rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="toggle-button.css">
+    </head>
+<body>
+    <div class="container">
+        <div id="grid-container"></div>
+        <div id="number-generator-container">
+            <div id="generated-Numbercontainer">
+                <div id="number">&nbsp;&nbsp;</div>
+            </div>
+            <div id="generator-container">
+                <input type="number" id="manualNumber" placeholder="Enter a number">
+                <br>
+                <input type="button" value="Generate" id="btn-generate" onclick="generateNum()">
+            </div>
+        </div>
+    </div>
+    <div id="themeToggle">
+        <label class="switch">
+            <input type="checkbox" id="themeCheckbox">
+            <span class="slider round"></span>
+        </label>
+        <span id="themeLabel">Dark Mode</span>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
